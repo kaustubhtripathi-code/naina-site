@@ -43,13 +43,8 @@
   .lede{color:var(--cream-dim);font-size:1.15rem;max-width:34rem;margin-bottom:36px}
   .hero-cta{display:flex;gap:16px;flex-wrap:wrap}
 
-  .portrait{aspect-ratio:4/5;border-radius:28px;position:relative;overflow:hidden;background:
-    radial-gradient(120% 90% at 70% 20%,rgba(156,175,136,.55),transparent 55%),
-    radial-gradient(100% 80% at 20% 85%,rgba(110,138,94,.5),transparent 60%),
-    linear-gradient(160deg,#1c2418,#0d0f0c 70%)}
-  .portrait::after{content:"NAINA";position:absolute;inset:auto 0 26px 0;text-align:center;font-family:var(--serif);font-size:3.2rem;font-weight:800;letter-spacing:.42em;color:rgba(244,241,234,.14)}
+  .portrait{aspect-ratio:4/5;border-radius:28px;position:relative;overflow:hidden;border:1px solid rgba(156,175,136,.35);background:url(naina.jpg) top center/cover no-repeat #1c2418}
   .portrait .chip{position:absolute;top:20px;left:20px;background:rgba(13,15,12,.72);border:1px solid rgba(156,175,136,.4);border-radius:100px;padding:8px 16px;font-size:.75rem;font-weight:600;color:var(--sage)}
-  .portrait .note{position:absolute;bottom:20px;left:20px;right:20px;text-align:center;font-size:.72rem;color:var(--cream-dim)}
 
   .band{border-top:1px solid rgba(156,175,136,.15);border-bottom:1px solid rgba(156,175,136,.15);background:var(--ink-2)}
   .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:44px 0;text-align:center}
@@ -127,9 +122,8 @@
         <a class="btn ghost" href="#services">See rates</a>
       </div>
     </div>
-    <div class="portrait">
+    <div class="portrait" role="img" aria-label="AI-generated portrait of Naina Rao on a rooftop at golden hour">
       <span class="chip">🤖 AI-generated persona</span>
-      <span class="note">Portrait renders drop here once the reference set is generated — see kit file 03</span>
     </div>
   </div>
 </header>
