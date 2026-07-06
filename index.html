@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naina Rao — India's openly-AI creator · Work with Naina</title>
+<meta name="description" content="Naina Rao is India's openly-AI lifestyle influencer. Sponsored posts, UGC packs and ambassador bundles for D2C brands — 48h turnaround, zero scandal risk, fully AI-disclosed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sage:#9CAF88; --sage-deep:#6E8A5E; --ink:#0D0F0C; --ink-2:#161A14;
+    --cream:#F4F1EA; --cream-dim:rgba(244,241,234,.62);
+    --serif:'Fraunces',serif; --sans:'Inter',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--ink);color:var(--cream);font-family:var(--sans);line-height:1.6}
+  ::selection{background:var(--sage);color:var(--ink)}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+
+  nav{position:sticky;top:0;z-index:9;background:rgba(13,15,12,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(156,175,136,.15)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{font-family:var(--serif);font-weight:800;font-size:1.35rem;color:var(--cream);text-decoration:none}
+  .logo em{color:var(--sage);font-style:normal}
+  nav ul{display:flex;gap:32px;list-style:none}
+  nav a{color:var(--cream-dim);text-decoration:none;font-size:.9rem;font-weight:500}
+  nav a:hover{color:var(--sage)}
+  .btn{display:inline-block;background:var(--sage);color:var(--ink);font-weight:700;padding:14px 30px;border-radius:100px;text-decoration:none;font-size:.95rem;transition:transform .15s ease,background .15s ease}
+  .btn:hover{transform:translateY(-2px);background:#b3c49f}
+  .btn.ghost{background:transparent;color:var(--sage);border:1.5px solid var(--sage)}
+  nav .btn{padding:10px 22px}
+
+  header{position:relative;overflow:hidden;padding:110px 0 90px}
+  header::before{content:"";position:absolute;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(156,175,136,.16),transparent 68%);top:-320px;right:-260px}
+  .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center;position:relative}
+  .kicker{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(156,175,136,.4);border-radius:100px;padding:7px 18px;font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--sage)}
+  .kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--sage);animation:pulse 2s infinite}
+  @keyframes pulse{50%{opacity:.35}}
+  h1{font-family:var(--serif);font-weight:800;font-size:clamp(2.6rem,5.4vw,4.6rem);line-height:1.06;letter-spacing:-.02em;margin:26px 0 22px}
+  h1 em{color:var(--sage);font-style:italic}
+  .lede{color:var(--cream-dim);font-size:1.15rem;max-width:34rem;margin-bottom:36px}
+  .hero-cta{display:flex;gap:16px;flex-wrap:wrap}
+
+  .portrait{aspect-ratio:4/5;border-radius:28px;position:relative;overflow:hidden;background:
+    radial-gradient(120% 90% at 70% 20%,rgba(156,175,136,.55),transparent 55%),
+    radial-gradient(100% 80% at 20% 85%,rgba(110,138,94,.5),transparent 60%),
+    linear-gradient(160deg,#1c2418,#0d0f0c 70%)}
+  .portrait::after{content:"NAINA";position:absolute;inset:auto 0 26px 0;text-align:center;font-family:var(--serif);font-size:3.2rem;font-weight:800;letter-spacing:.42em;color:rgba(244,241,234,.14)}
+  .portrait .chip{position:absolute;top:20px;left:20px;background:rgba(13,15,12,.72);border:1px solid rgba(156,175,136,.4);border-radius:100px;padding:8px 16px;font-size:.75rem;font-weight:600;color:var(--sage)}
+  .portrait .note{position:absolute;bottom:20px;left:20px;right:20px;text-align:center;font-size:.72rem;color:var(--cream-dim)}
+
+  .band{border-top:1px solid rgba(156,175,136,.15);border-bottom:1px solid rgba(156,175,136,.15);background:var(--ink-2)}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:44px 0;text-align:center}
+  .stats b{display:block;font-family:var(--serif);font-size:2.3rem;color:var(--sage);font-weight:800}
+  .stats span{font-size:.82rem;color:var(--cream-dim)}
+
+  section{padding:96px 0}
+  .sec-kicker{color:var(--sage);font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+  h2{font-family:var(--serif);font-size:clamp(1.9rem,3.4vw,2.8rem);font-weight:800;letter-spacing:-.01em;margin:14px 0 18px}
+  .sub{color:var(--cream-dim);max-width:38rem}
+
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+  .card{background:var(--ink-2);border:1px solid rgba(156,175,136,.18);border-radius:22px;padding:36px 30px;transition:border-color .2s,transform .2s}
+  .card:hover{border-color:rgba(156,175,136,.55);transform:translateY(-4px)}
+  .card b{display:block;font-family:var(--serif);font-size:1.9rem;color:var(--sage);font-weight:800;margin-bottom:10px}
+  .card p{color:var(--cream-dim);font-size:.95rem}
+
+  table{width:100%;border-collapse:collapse;margin-top:48px;font-size:.95rem}
+  th{text-align:left;padding:16px 18px;color:var(--sage);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid rgba(156,175,136,.3)}
+  td{padding:18px;border-bottom:1px solid rgba(156,175,136,.12)}
+  td:last-child,th:last-child{text-align:right;white-space:nowrap}
+  tr:hover td{background:rgba(156,175,136,.05)}
+  .tag{display:inline-block;background:rgba(156,175,136,.15);color:var(--sage);border-radius:100px;padding:3px 12px;font-size:.72rem;font-weight:600;margin-left:10px}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px;counter-reset:step}
+  .step{position:relative;padding:34px 28px;border-radius:22px;border:1px dashed rgba(156,175,136,.35)}
+  .step::before{counter-increment:step;content:"0" counter(step);font-family:var(--serif);font-size:2.6rem;font-weight:800;color:rgba(156,175,136,.35);display:block;margin-bottom:12px}
+  .step h3{font-size:1.05rem;margin-bottom:8px}
+  .step p{color:var(--cream-dim);font-size:.92rem}
+
+  .compliance{background:var(--ink-2);border:1px solid rgba(156,175,136,.18);border-radius:26px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;margin-top:52px}
+  .compliance ul{list-style:none;display:grid;gap:14px}
+  .compliance li{padding-left:30px;position:relative;color:var(--cream-dim);font-size:.95rem}
+  .compliance li::before{content:"✓";position:absolute;left:0;color:var(--sage);font-weight:700}
+
+  .cta-final{text-align:center;padding:110px 0}
+  .cta-final h2{font-size:clamp(2.2rem,4.4vw,3.6rem)}
+  .cta-final .lede{margin:0 auto 40px}
+  .fineprint{margin-top:26px;font-size:.78rem;color:var(--cream-dim)}
+
+  footer{border-top:1px solid rgba(156,175,136,.15);padding:34px 0;font-size:.82rem;color:var(--cream-dim)}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+  @media(max-width:880px){
+    .hero-grid,.compliance{grid-template-columns:1fr}
+    .cards,.steps{grid-template-columns:1fr}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    nav ul{display:none}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#">naina<em>.rao</em>.ai</a>
+    <ul>
+      <li><a href="#why">Why AI</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#compliance">Compliance</a></li>
+    </ul>
+    <a class="btn" href="#book">Get a free sample</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">100% AI · 100% disclosed</span>
+      <h1>Your next brand ambassador <em>isn't human.</em><br>That's the point.</h1>
+      <p class="lede">Naina Rao is India's openly-AI fitness, travel &amp; lifestyle creator. Brands get scroll-stopping content in 48 hours — no shoots, no logistics, no scandal risk — with AI disclosure handled end-to-end.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#book">Get a free sample visual</a>
+        <a class="btn ghost" href="#services">See rates</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <span class="chip">🤖 AI-generated persona</span>
+      <span class="note">Portrait renders drop here once the reference set is generated — see kit file 03</span>
+    </div>
+  </div>
+</header>
+
+<div class="band">
+  <div class="wrap stats">
+    <div><b>$46B</b><span>virtual-influencer market by 2030</span></div>
+    <div><b>2–3×</b><span>comment rates vs comparable human creators</span></div>
+    <div><b>48h</b><span>turnaround on any brief</span></div>
+    <div><b>0</b><span>scandals, reshoots or travel invoices</span></div>
+  </div>
+</div>
+
+<section id="why">
+  <div class="wrap">
+    <span class="sec-kicker">Why an AI creator</span>
+    <h2>Everything a human influencer does.<br>Minus everything brands hate.</h2>
+    <p class="sub">Top AI influencers already earn €3–10k a month from brand deals. The category is proven abroad — Naina brings it to the world's second-largest Instagram market.</p>
+    <div class="cards">
+      <div class="card"><b>48-hour</b><p>turnaround from brief to finished visuals. Unlimited revisions — a re-render, not a reshoot.</p></div>
+      <div class="card"><b>Zero</b><p>scandal risk. Naina says exactly what's approved, is available 24/7, and never has a bad hair day unless you ask for one.</p></div>
+      <div class="card"><b>Free PR</b><p>"first AI influencer collab" is a story tech and business press reliably covers — earned media on top of the post itself.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="band">
+  <div class="wrap">
+    <span class="sec-kicker">Services &amp; launch rates</span>
+    <h2>Transparent pricing. No agency markup.</h2>
+    <p class="sub">Launch rates for the Indian market — locked for six months for founding partners.</p>
+    <table>
+      <tr><th>Deliverable</th><th>What you get</th><th>Rate</th></tr>
+      <tr><td>Sponsored grid post</td><td>1 photorealistic image + caption in Naina's voice, posted to her audience</td><td>₹8–25k</td></tr>
+      <tr><td>Sponsored Reel</td><td>Short-form video with Naina's signature AI voice, trending format</td><td>₹12–30k</td></tr>
+      <tr><td>Story set</td><td>3 frames with link sticker + swipe-up CTA</td><td>₹4–8k</td></tr>
+      <tr><td>UGC pack <span class="tag">no audience needed</span></td><td>10 high-end lifestyle images of Naina with your product, for your own ads &amp; social. Full usage rights.</td><td>₹8–15k</td></tr>
+      <tr><td>Ambassador bundle</td><td>Monthly: 4 posts + 2 reels + stories + category exclusivity</td><td>₹40–75k/mo</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <span class="sec-kicker">How it works</span>
+    <h2>From brief to live post in three steps.</h2>
+    <div class="steps">
+      <div class="step"><h3>Send the brief</h3><p>Product shots, brand guidelines, and the vibe you want. A DM is enough to start.</p></div>
+      <div class="step"><h3>Get a free sample</h3><p>Within 48 hours you'll see Naina with your product — before you've spent a rupee. Keep it either way.</p></div>
+      <div class="step"><h3>Approve &amp; ship</h3><p>Unlimited revisions until sign-off, then it goes live with full disclosure labels. Usage rights as agreed.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="compliance" class="band">
+  <div class="wrap">
+    <span class="sec-kicker">Compliance</span>
+    <h2>Your legal team will love us.</h2>
+    <div class="compliance">
+      <p class="sub" style="max-width:none">Naina is openly AI everywhere — it's the brand positioning, not a footnote. Every sponsored deliverable ships with the right labels by default, so there is nothing for a regulator, platform, or journalist to "expose."</p>
+      <ul>
+        <li>Instagram Paid Partnership label + #ad on every sponsored post</li>
+        <li>Meta "AI-generated" self-disclosure on all synthetic media</li>
+        <li>ASCI (India) virtual-influencer guideline compliant — audiences always know she isn't human</li>
+        <li>FTC-aligned disclosure of both the commercial relationship and AI origin</li>
+        <li>No false lived-experience claims — Naina never pretends to have used or tasted a product</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final" id="book">
+  <div class="wrap">
+    <span class="kicker">3 founding-partner slots</span>
+    <h2>An actual brand paid an imaginary girl.<br><em style="color:var(--sage);font-style:italic">Make it yours.</em></h2>
+    <p class="lede">First three brand partners get launch rates locked for six months, a free sample visual within 48 hours, and a permanent place in Naina's lore as her "first sponsor ever" — a post money can't otherwise buy.</p>
+    <a class="btn" href="mailto:hello@nainarao.ai?subject=Collab%20with%20Naina">Book a collab →</a>
+    <p class="fineprint">Or DM <b style="color:var(--sage)">@naina.rao.ai</b> on Instagram · Media kit &amp; deck available on request</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Naina Rao — an openly-AI virtual persona. Not a real human, and proud of it.</span>
+    <span>Made of pixels, powered by dreams 🤖</span>
+  </div>
+</footer>
+
+</body>
+</html>
