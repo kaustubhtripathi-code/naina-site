@@ -75,6 +75,14 @@
   .step h3{font-size:1.05rem;margin-bottom:8px}
   .step p{color:var(--cream-dim);font-size:.92rem}
 
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:52px}
+  .gallery img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px;border:1px solid rgba(156,175,136,.2);transition:transform .2s}
+  .gallery img:hover{transform:scale(1.025)}
+  .promo-wrap{margin-top:56px;text-align:center}
+  .promo-wrap video{width:100%;max-width:860px;border-radius:20px;border:1px solid rgba(156,175,136,.25);display:block;margin:0 auto}
+  .promo-note{margin-top:14px;font-size:.85rem;color:var(--cream-dim)}
+  @media(max-width:880px){.gallery{grid-template-columns:repeat(2,1fr)}}
+
   .compliance{background:var(--ink-2);border:1px solid rgba(156,175,136,.18);border-radius:26px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;margin-top:52px}
   .compliance ul{list-style:none;display:grid;gap:14px}
   .compliance li{padding-left:30px;position:relative;color:var(--cream-dim);font-size:.95rem}
@@ -103,6 +111,7 @@
     <a class="logo" href="#">naina<em>.rao</em>.ai</a>
     <ul>
       <li><a href="#why">Why AI</a></li>
+      <li><a href="#work">Work</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#how">How it works</a></li>
       <li><a href="#compliance">Compliance</a></li>
@@ -163,6 +172,28 @@
       <tr><td>UGC pack <span class="tag">no audience needed</span></td><td>10 high-end lifestyle images of Naina with your product, for your own ads &amp; social. Full usage rights.</td><td>₹8–15k</td></tr>
       <tr><td>Ambassador bundle</td><td>Monthly: 4 posts + 2 reels + stories + category exclusivity</td><td>₹40–75k/mo</td></tr>
     </table>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <span class="sec-kicker">Sample content</span>
+    <h2>The feed speaks for itself.</h2>
+    <p class="sub">Every image below was generated, reviewed and delivered through the same pipeline your campaign would use — no shoots, no location scouting, no weather delays.</p>
+    <div class="gallery">
+      <img src="gallery/post-13-monsoon-chai.jpg" alt="Naina with chai at a rain-streaked window" loading="lazy">
+      <img src="gallery/post-02-gym.jpg" alt="Naina mid-squat with a barbell in a gym" loading="lazy">
+      <img src="gallery/post-19-saree.jpg" alt="Naina in a modern sage saree on heritage stairs" loading="lazy">
+      <img src="gallery/post-18-nandi-sunrise.jpg" alt="Naina above the clouds at a sunrise viewpoint" loading="lazy">
+      <img src="gallery/post-06-street.jpg" alt="Naina in street style in front of a mural" loading="lazy">
+      <img src="gallery/post-23-waterfall.jpg" alt="Naina in front of a monsoon waterfall" loading="lazy">
+    </div>
+    <div class="promo-wrap">
+      <video controls muted playsinline preload="metadata" poster="naina.jpg">
+        <source src="promo.mp4" type="video/mp4">
+      </video>
+      <p class="promo-note">60-second pitch, if you'd rather watch than scroll 👆</p>
+    </div>
   </div>
 </section>
 
