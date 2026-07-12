@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Naina Rao — India's openly-AI creator · Work with Naina</title>
-<meta name="description" content="Naina Rao is India's openly-AI lifestyle influencer. Sponsored posts, UGC packs and ambassador bundles for D2C brands — 48h turnaround, zero scandal risk, fully AI-disclosed.">
+<title>Naina Rao — openly-AI creator · Personae builds brand-owned AI creators</title>
+<meta name="description" content="Naina Rao is India's openly-AI creator — and the proof behind Personae: we build brand-owned AI creators in your brand's voice, produce their content, and run their campaigns. Fully AI-disclosed. A Personae by Everfold Labs studio.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
   nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
   .logo{font-family:var(--serif);font-weight:800;font-size:1.35rem;color:var(--cream);text-decoration:none}
   .logo em{color:var(--sage);font-style:normal}
-  nav ul{display:flex;gap:32px;list-style:none}
+  nav ul{display:flex;gap:30px;list-style:none}
   nav a{color:var(--cream-dim);text-decoration:none;font-size:.9rem;font-weight:500}
   nav a:hover{color:var(--sage)}
   .btn{display:inline-block;background:var(--sage);color:var(--ink);font-weight:700;padding:14px 30px;border-radius:100px;text-decoration:none;font-size:.95rem;transition:transform .15s ease,background .15s ease}
@@ -54,15 +54,16 @@
   section{padding:96px 0}
   .sec-kicker{color:var(--sage);font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
   h2{font-family:var(--serif);font-size:clamp(1.9rem,3.4vw,2.8rem);font-weight:800;letter-spacing:-.01em;margin:14px 0 18px}
-  .sub{color:var(--cream-dim);max-width:38rem}
+  .sub{color:var(--cream-dim);max-width:40rem}
 
   .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
   .card{background:var(--ink-2);border:1px solid rgba(156,175,136,.18);border-radius:22px;padding:36px 30px;transition:border-color .2s,transform .2s}
   .card:hover{border-color:rgba(156,175,136,.55);transform:translateY(-4px)}
   .card b{display:block;font-family:var(--serif);font-size:1.9rem;color:var(--sage);font-weight:800;margin-bottom:10px}
   .card p{color:var(--cream-dim);font-size:.95rem}
+  .band .card{background:var(--ink)}
 
-  table{width:100%;border-collapse:collapse;margin-top:48px;font-size:.95rem}
+  table{width:100%;border-collapse:collapse;margin-top:40px;font-size:.95rem}
   th{text-align:left;padding:16px 18px;color:var(--sage);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid rgba(156,175,136,.3)}
   td{padding:18px;border-bottom:1px solid rgba(156,175,136,.12)}
   td:last-child,th:last-child{text-align:right;white-space:nowrap}
@@ -74,6 +75,16 @@
   .step::before{counter-increment:step;content:"0" counter(step);font-family:var(--serif);font-size:2.6rem;font-weight:800;color:rgba(156,175,136,.35);display:block;margin-bottom:12px}
   .step h3{font-size:1.05rem;margin-bottom:8px}
   .step p{color:var(--cream-dim);font-size:.92rem}
+
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:52px}
+  .offer{background:var(--ink-2);border:1px solid rgba(156,175,136,.2);border-radius:24px;padding:40px 34px}
+  .offer.feature{border-color:rgba(156,175,136,.5);box-shadow:0 0 0 1px rgba(156,175,136,.2),0 30px 80px -40px rgba(156,175,136,.4)}
+  .offer .pill{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);border:1px solid rgba(156,175,136,.4);border-radius:100px;padding:5px 14px;margin-bottom:18px}
+  .offer h3{font-family:var(--serif);font-size:1.7rem;font-weight:800;margin-bottom:8px}
+  .offer .who{color:var(--cream-dim);font-size:.92rem;margin-bottom:22px}
+  .offer ul{list-style:none;display:grid;gap:12px}
+  .offer li{padding-left:28px;position:relative;color:var(--cream);font-size:.95rem}
+  .offer li::before{content:"→";position:absolute;left:0;color:var(--sage);font-weight:700}
 
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:52px}
   .gallery img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px;border:1px solid rgba(156,175,136,.2);transition:transform .2s}
@@ -95,9 +106,10 @@
 
   footer{border-top:1px solid rgba(156,175,136,.15);padding:34px 0;font-size:.82rem;color:var(--cream-dim)}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  footer a{color:var(--sage);text-decoration:none}
 
   @media(max-width:880px){
-    .hero-grid,.compliance{grid-template-columns:1fr}
+    .hero-grid,.compliance,.split{grid-template-columns:1fr}
     .cards,.steps{grid-template-columns:1fr}
     .stats{grid-template-columns:repeat(2,1fr)}
     nav ul{display:none}
@@ -110,9 +122,9 @@
   <div class="wrap">
     <a class="logo" href="#">naina<em>.rao</em>.ai</a>
     <ul>
-      <li><a href="#why">Why AI</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#services">Services</a></li>
+      <li><a href="#studio">Build your own</a></li>
+      <li><a href="#work">Proof</a></li>
+      <li><a href="#services">Partner with Naina</a></li>
       <li><a href="#how">How it works</a></li>
       <li><a href="#compliance">Compliance</a></li>
     </ul>
@@ -124,11 +136,11 @@
   <div class="wrap hero-grid">
     <div>
       <span class="kicker">100% AI · 100% disclosed</span>
-      <h1>Your next brand ambassador <em>isn't human.</em><br>That's the point.</h1>
-      <p class="lede">Naina Rao is India's openly-AI fitness, travel &amp; lifestyle creator. Brands get scroll-stopping content in 48 hours — no shoots, no logistics, no scandal risk — with AI disclosure handled end-to-end.</p>
+      <h1>Your next brand ambassador <em>isn't human.</em><br>Better yet — make it <em>yours.</em></h1>
+      <p class="lede">Naina Rao is India's openly-AI lifestyle creator, and living proof the model works. Through <b style="color:var(--cream)">Personae</b> we now build brand-owned AI creators — in <em>your</em> brand's voice, look and values — produce their content, and run their campaigns end to end.</p>
       <div class="hero-cta">
-        <a class="btn" href="#book">Get a free sample visual</a>
-        <a class="btn ghost" href="#services">See rates</a>
+        <a class="btn" href="#studio">Build your own creator</a>
+        <a class="btn ghost" href="#services">Partner with Naina</a>
       </div>
     </div>
     <div class="portrait" role="img" aria-label="AI-generated portrait of Naina Rao on a rooftop at golden hour">
@@ -146,40 +158,63 @@
   </div>
 </div>
 
-<section id="why">
+<section id="studio">
   <div class="wrap">
-    <span class="sec-kicker">Why an AI creator</span>
-    <h2>Everything a human influencer does.<br>Minus everything brands hate.</h2>
-    <p class="sub">Top AI influencers already earn €3–10k a month from brand deals. The category is proven abroad — Naina brings it to the world's second-largest Instagram market.</p>
-    <div class="cards">
-      <div class="card"><b>48-hour</b><p>turnaround from brief to finished visuals. Unlimited revisions — a re-render, not a reshoot.</p></div>
-      <div class="card"><b>Zero</b><p>scandal risk. Naina says exactly what's approved, is available 24/7, and never has a bad hair day unless you ask for one.</p></div>
-      <div class="card"><b>Free PR</b><p>"first AI influencer collab" is a story tech and business press reliably covers — earned media on top of the post itself.</p></div>
+    <span class="sec-kicker">Personae · a studio by Everfold Labs</span>
+    <h2>Don't rent an influencer.<br>Own one — in your brand's voice.</h2>
+    <p class="sub">Naina proves the model. Now we build a creator that belongs to <em>you</em>: a face, a voice and a personality tuned to your brand's exact tone, produced on a content calendar and run as a live campaign — with AI disclosure handled everywhere.</p>
+    <div class="steps">
+      <div class="step"><h3>Design your creator</h3><p>We craft the persona to your brief — look, voice, backstory and tone. You approve a persona bible and a locked, consistent visual identity that's yours to keep.</p></div>
+      <div class="step"><h3>Produce the content</h3><p>Photorealistic grid posts, reels with a signature AI voice, and UGC packs for your own ads — on a calendar, in your creator's voice, at a pace no human shoot can match.</p></div>
+      <div class="step"><h3>Run the campaigns</h3><p>We publish, engage the community, brief around your launches and report on what performed — a managed creator, not just a folder of files.</p></div>
+    </div>
+
+    <div class="split">
+      <div class="offer">
+        <span class="pill">Creator Sprint</span>
+        <h3>Launch a creator</h3>
+        <p class="who">For brands that want an owned AI creator, fast.</p>
+        <ul>
+          <li>Persona design + bible in your brand voice</li>
+          <li>Locked visual identity (LoRA-consistent)</li>
+          <li>Launch pack: 12 posts + 3 reels + avatar set</li>
+          <li>Full AI-disclosure + usage rights, yours to keep</li>
+        </ul>
+      </div>
+      <div class="offer feature">
+        <span class="pill">Managed Creator</span>
+        <h3>We run it for you</h3>
+        <p class="who">The whole thing, off your plate — monthly.</p>
+        <ul>
+          <li>Everything in Creator Sprint, plus:</li>
+          <li>Monthly content calendar — posts, reels, stories</li>
+          <li>Posting, community replies &amp; campaign pushes</li>
+          <li>Performance reporting &amp; creative iteration</li>
+          <li>Optional multi-platform (IG · YouTube · more)</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="services" class="band">
+<section id="why" class="band">
   <div class="wrap">
-    <span class="sec-kicker">Services &amp; launch rates</span>
-    <h2>Transparent pricing. No agency markup.</h2>
-    <p class="sub">Launch rates for the Indian market — locked for six months for founding partners.</p>
-    <table>
-      <tr><th>Deliverable</th><th>What you get</th><th>Rate</th></tr>
-      <tr><td>Sponsored grid post</td><td>1 photorealistic image + caption in Naina's voice, posted to her audience</td><td>₹8–25k</td></tr>
-      <tr><td>Sponsored Reel</td><td>Short-form video with Naina's signature AI voice, trending format</td><td>₹12–30k</td></tr>
-      <tr><td>Story set</td><td>3 frames with link sticker + swipe-up CTA</td><td>₹4–8k</td></tr>
-      <tr><td>UGC pack <span class="tag">no audience needed</span></td><td>10 high-end lifestyle images of Naina with your product, for your own ads &amp; social. Full usage rights.</td><td>₹8–15k</td></tr>
-      <tr><td>Ambassador bundle</td><td>Monthly: 4 posts + 2 reels + stories + category exclusivity</td><td>₹40–75k/mo</td></tr>
-    </table>
+    <span class="sec-kicker">Why an AI creator</span>
+    <h2>Everything a human influencer does.<br>Minus everything brands hate.</h2>
+    <p class="sub">Top AI creators already earn €3–10k a month from brand deals. The category is proven abroad — Personae brings brand-owned versions to the world's second-largest Instagram market.</p>
+    <div class="cards">
+      <div class="card"><b>48-hour</b><p>turnaround from brief to finished visuals. Unlimited revisions — a re-render, not a reshoot.</p></div>
+      <div class="card"><b>Zero</b><p>scandal risk. Your creator says exactly what's approved, is available 24/7, and never has a bad hair day unless you ask for one.</p></div>
+      <div class="card"><b>You own it</b><p>the persona, the identity and the content are your brand's asset — not a rented human who can walk, or post something you can't take back.</p></div>
+    </div>
   </div>
 </section>
 
 <section id="work">
   <div class="wrap">
-    <span class="sec-kicker">Sample content</span>
+    <span class="sec-kicker">The proof · Naina Rao</span>
     <h2>The feed speaks for itself.</h2>
-    <p class="sub">Every image below was generated, reviewed and delivered through the same pipeline your campaign would use — no shoots, no location scouting, no weather delays.</p>
+    <p class="sub">Every image below was generated, reviewed and delivered through the exact pipeline your brand's creator would use — no shoots, no location scouting, no weather delays. This is Naina; yours would look unmistakably like <em>you</em>.</p>
     <div class="gallery">
       <img src="gallery/post-13-monsoon-chai.jpg" alt="Naina with chai at a rain-streaked window" loading="lazy">
       <img src="gallery/post-02-gym.jpg" alt="Naina mid-squat with a barbell in a gym" loading="lazy">
@@ -197,14 +232,30 @@
   </div>
 </section>
 
+<section id="services" class="band">
+  <div class="wrap">
+    <span class="sec-kicker">Or partner with Naina</span>
+    <h2>Not ready to own one? Rent the proof.</h2>
+    <p class="sub">Prefer to test the format before building your own? Sponsor Naina directly — same pipeline, her audience. Launch rates for the Indian market, locked six months for founding partners.</p>
+    <table>
+      <tr><th>Deliverable</th><th>What you get</th><th>Rate</th></tr>
+      <tr><td>Sponsored grid post</td><td>1 photorealistic image + caption in Naina's voice, posted to her audience</td><td>₹8–25k</td></tr>
+      <tr><td>Sponsored Reel</td><td>Short-form video with Naina's signature AI voice, trending format</td><td>₹12–30k</td></tr>
+      <tr><td>Story set</td><td>3 frames with link sticker + swipe-up CTA</td><td>₹4–8k</td></tr>
+      <tr><td>UGC pack <span class="tag">no audience needed</span></td><td>10 high-end lifestyle images of Naina with your product, for your own ads &amp; social. Full usage rights.</td><td>₹8–15k</td></tr>
+      <tr><td>Ambassador bundle</td><td>Monthly: 4 posts + 2 reels + stories + category exclusivity</td><td>₹40–75k/mo</td></tr>
+    </table>
+  </div>
+</section>
+
 <section id="how">
   <div class="wrap">
     <span class="sec-kicker">How it works</span>
-    <h2>From brief to live post in three steps.</h2>
+    <h2>From brief to live campaign in three steps.</h2>
     <div class="steps">
-      <div class="step"><h3>Send the brief</h3><p>Product shots, brand guidelines, and the vibe you want. A DM is enough to start.</p></div>
-      <div class="step"><h3>Get a free sample</h3><p>Within 48 hours you'll see Naina with your product — before you've spent a rupee. Keep it either way.</p></div>
-      <div class="step"><h3>Approve &amp; ship</h3><p>Unlimited revisions until sign-off, then it goes live with full disclosure labels. Usage rights as agreed.</p></div>
+      <div class="step"><h3>Send the brief</h3><p>Your brand guidelines, the audience you want, and whether you want your own creator or a Naina collab. A DM is enough to start.</p></div>
+      <div class="step"><h3>Get a free sample</h3><p>Within 48 hours you'll see the creator with your product — before you've spent a rupee. Keep it either way.</p></div>
+      <div class="step"><h3>Approve &amp; run</h3><p>Unlimited revisions until sign-off, then we produce, post and manage it live with full disclosure labels. Usage rights as agreed.</p></div>
     </div>
   </div>
 </section>
@@ -214,13 +265,13 @@
     <span class="sec-kicker">Compliance</span>
     <h2>Your legal team will love us.</h2>
     <div class="compliance">
-      <p class="sub" style="max-width:none">Naina is openly AI everywhere — it's the brand positioning, not a footnote. Every sponsored deliverable ships with the right labels by default, so there is nothing for a regulator, platform, or journalist to "expose."</p>
+      <p class="sub" style="max-width:none">Every Personae creator is openly AI — it's the positioning, not a footnote. Each sponsored deliverable ships with the right labels by default, so there is nothing for a regulator, platform, or journalist to "expose."</p>
       <ul>
         <li>Instagram Paid Partnership label + #ad on every sponsored post</li>
         <li>Meta "AI-generated" self-disclosure on all synthetic media</li>
-        <li>ASCI (India) virtual-influencer guideline compliant — audiences always know she isn't human</li>
+        <li>ASCI (India) virtual-influencer guideline compliant — audiences always know the creator isn't human</li>
         <li>FTC-aligned disclosure of both the commercial relationship and AI origin</li>
-        <li>No false lived-experience claims — Naina never pretends to have used or tasted a product</li>
+        <li>No false lived-experience claims — the creator never pretends to have used or tasted a product</li>
       </ul>
     </div>
   </div>
@@ -229,17 +280,17 @@
 <section class="cta-final" id="book">
   <div class="wrap">
     <span class="kicker">3 founding-partner slots</span>
-    <h2>An actual brand paid an imaginary girl.<br><em style="color:var(--sage);font-style:italic">Make it yours.</em></h2>
-    <p class="lede">First three brand partners get launch rates locked for six months, a free sample visual within 48 hours, and a permanent place in Naina's lore as her "first sponsor ever" — a post money can't otherwise buy.</p>
-    <a class="btn" href="mailto:hello@nainarao.ai?subject=Collab%20with%20Naina">Book a collab →</a>
-    <p class="fineprint">Or DM <b style="color:var(--sage)">@naina.rao.ai</b> on Instagram · Media kit &amp; deck available on request</p>
+    <h2>An actual brand paid an imaginary girl.<br><em style="color:var(--sage);font-style:italic">Now build your own.</em></h2>
+    <p class="lede">Founding partners get a free sample creator or visual within 48 hours, launch rates locked for six months, and first pick of category exclusivity. Rent Naina to test the format, or commission a creator that's yours forever.</p>
+    <a class="btn" href="mailto:kaustubh.trt@gmail.com?subject=Personae%20—%20build%20my%20brand%20a%20creator">Start a conversation →</a>
+    <p class="fineprint">Email <b style="color:var(--sage)">kaustubh.trt@gmail.com</b> · or DM <b style="color:var(--sage)">@naina.rao.ai</b> · Media kit &amp; deck on request</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Naina Rao — an openly-AI virtual persona. Not a real human, and proud of it.</span>
-    <span>Made of pixels, powered by dreams 🤖</span>
+    <span>© 2026 Naina Rao — an openly-AI virtual persona. <b>Personae</b>, a studio by <a href="https://kaustubhtripathi-code.github.io/everfold-site/">Everfold Labs</a>.</span>
+    <span>Made of pixels, powered by dreams 🤖 · kaustubh.trt@gmail.com</span>
   </div>
 </footer>
 
